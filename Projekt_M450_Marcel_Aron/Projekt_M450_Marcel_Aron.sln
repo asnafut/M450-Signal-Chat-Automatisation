@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceptanceTests", "Acceptan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{EF97685E-7003-406E-96FF-FED002A552C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageSender", "MessageSender\MessageSender.csproj", "{02DE9FD6-D7B9-4D5A-85E1-1C9FC4AC8BD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{EF97685E-7003-406E-96FF-FED002A552C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF97685E-7003-406E-96FF-FED002A552C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF97685E-7003-406E-96FF-FED002A552C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02DE9FD6-D7B9-4D5A-85E1-1C9FC4AC8BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DE9FD6-D7B9-4D5A-85E1-1C9FC4AC8BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DE9FD6-D7B9-4D5A-85E1-1C9FC4AC8BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DE9FD6-D7B9-4D5A-85E1-1C9FC4AC8BD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

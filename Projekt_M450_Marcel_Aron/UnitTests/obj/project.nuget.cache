@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D3SMh4v5aTACizcsPQMxlYA4R0/yHSD/VFqW5/MaLS3U/fA+aeHm5utmEbkb7AXgg9giyw/5oh71sJf0rep6bQ==",
+  "dgSpecHash": "gxafagwyk4TE66rINMbomUurT2rNkOpxXDFukzNOLOI27k+ez4unamfr2z51ANavoDcz4GqT/QjrpjBkU2hx+Q==",
   "success": true,
-  "projectFilePath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
+  "projectFilePath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aron\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Aron\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

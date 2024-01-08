@@ -6341,11 +6341,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
+      "projectPath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
       "packagesPath": "C:\\Users\\Aron\\.nuget\\packages\\",
-      "outputPath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Projekt_M450_Marcel_Aron\\UnitTests\\obj\\",
+      "outputPath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aron\\AppData\\Roaming\\NuGet\\NuGet.Config",

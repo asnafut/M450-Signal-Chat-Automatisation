@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj": {}
+    "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj": {}
   },
   "projects": {
-    "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj": {
+    "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
-        "projectName": "UnitTests",
-        "projectPath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
+        "projectUniqueName": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
+        "projectName": "MessageSender",
+        "projectPath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
         "packagesPath": "C:\\Users\\Aron\\.nuget\\packages\\",
-        "outputPath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\obj\\",
+        "outputPath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aron\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,21 +40,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "MSTest.TestAdapter": {
+            "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[2.2.8, )"
+              "version": "[4.16.2, )"
             },
-            "MSTest.TestFramework": {
+            "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[2.2.8, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[17.1.0, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[121.0.6167.4700-beta, )"
             }
           },
           "imports": [
