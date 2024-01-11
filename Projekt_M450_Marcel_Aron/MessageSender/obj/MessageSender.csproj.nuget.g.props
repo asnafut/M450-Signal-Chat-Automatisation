@@ -12,4 +12,8 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Aron\.nuget\packages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgInterop_UIAutomationClient_Signed Condition=" '$(PkgInterop_UIAutomationClient_Signed)' == '' ">C:\Users\Aron\.nuget\packages\interop.uiautomationclient.signed\10.18362.0</PkgInterop_UIAutomationClient_Signed>
+    <PkgExtended_Wpf_Toolkit Condition=" '$(PkgExtended_Wpf_Toolkit)' == '' ">C:\Users\Aron\.nuget\packages\extended.wpf.toolkit\3.7.0</PkgExtended_Wpf_Toolkit>
+  </PropertyGroup>
 </Project>

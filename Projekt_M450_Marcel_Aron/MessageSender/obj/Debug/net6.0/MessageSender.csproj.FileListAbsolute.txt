@@ -19,3 +19,10 @@ C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\obj\Debug\net6.0\MessageSender.pdb
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\obj\Debug\net6.0\MessageSender.genruntimeconfig.cache
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\obj\Debug\net6.0\ref\MessageSender.dll
+C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0\AngleSharp.dll
+C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0\ICSharpCode.SharpZipLib.dll
+C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0\System.Text.Json.dll
+C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0\WebDriverManager.dll
+C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0\WebDriver.Support.dll
