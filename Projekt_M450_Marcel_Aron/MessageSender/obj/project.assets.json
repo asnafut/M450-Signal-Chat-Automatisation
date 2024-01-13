@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net6.0-windows7.0": {
       "AngleSharp/1.0.4": {
         "type": "package",
         "dependencies": {
@@ -2270,7 +2270,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net6.0-windows7.0": [
       "IRobot.UIAutomation.Activities >= 1.0.0",
       "Selenium.Support >= 4.16.2",
       "Selenium.WebDriver >= 4.16.2",
@@ -2279,31 +2279,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aron\\.nuget\\packages\\": {}
+    "C:\\Users\\AronS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
+      "projectUniqueName": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
       "projectName": "MessageSender",
-      "projectPath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
-      "packagesPath": "C:\\Users\\Aron\\.nuget\\packages\\",
-      "outputPath": "C:\\GIBZ\\Berufsschule\\M450\\Projekt\\Code\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\obj\\",
+      "projectPath": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
+      "packagesPath": "C:\\Users\\AronS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\AronS\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net6.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
           "projectReferences": {}
         }
       },
@@ -2314,8 +2312,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
         "dependencies": {
           "IRobot.UIAutomation.Activities": {
             "target": "Package",
@@ -2363,50 +2361,50 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Extended.Wpf.Toolkit 3.7.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Extended.Wpf.Toolkit 3.7.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Extended.Wpf.Toolkit",
       "targetGraphs": [
-        "net6.0"
+        "net6.0-windows7.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'IRobot.UIAutomation.Activities 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'IRobot.UIAutomation.Activities 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "IRobot.UIAutomation.Activities",
       "targetGraphs": [
-        "net6.0"
+        "net6.0-windows7.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.VisualStudio.OLE.Interop 7.10.6071' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.VisualStudio.OLE.Interop 7.10.6071' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.VisualStudio.OLE.Interop",
       "targetGraphs": [
-        "net6.0"
+        "net6.0-windows7.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'ThammimTech.Microsoft.Vbe.Interop 15.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'ThammimTech.Microsoft.Vbe.Interop 15.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "ThammimTech.Microsoft.Vbe.Interop",
       "targetGraphs": [
-        "net6.0"
+        "net6.0-windows7.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Unofficial.Microsoft.mshtml 7.0.3300' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Unofficial.Microsoft.mshtml 7.0.3300' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Unofficial.Microsoft.mshtml",
       "targetGraphs": [
-        "net6.0"
+        "net6.0-windows7.0"
       ]
     }
   ]

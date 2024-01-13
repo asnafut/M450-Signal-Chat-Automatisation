@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using IRobot.UIAutomation.Activities.Browser.JScriptExecutor;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using WebDriverManager;
@@ -83,25 +84,55 @@ namespace MessageSender
             string word = firstLetter + secondLetter + thirdLetter + forthLetter + fifthLetter + sixthLetter + seventhLetter + eightLetter;
             return word;
         }
+        
+        private void WaitForElementToBeVisible(By by, int timeoutInSeconds)
+        {
+            WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(timeoutInSeconds));
+            wait.Until(SeleniumExtras.ExpectedConditions.ElementIsVisible(by));
+            Console.WriteLine("element found");
+        }
+
+        private IWebElement FindElementWithTimeout(By by, int timeoutInSeconds)
+        {
+            WaitForElementToBeVisible(by, timeoutInSeconds);
+            Console.WriteLine("element sent");
+            return webDriver.FindElement(by);
+        }
 
         private void searchChat(string searchQuery)
         {
-            WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
-            IWebElement SearchResult = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath(target_xpath)));
- 
-            SearchResult.Click();
-            Thread.Sleep(5000);
-            timeoutInit(5);
-            var searchField = webDriver.FindElement(By.XPath("//*[@id='side']/div[1]/div/div[2]/div[2]/div/div[1]/p"));
+            // // Example: Wait for an element with ID "exampleElement" to be present
+            // WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
+            //
+            // // Replace "exampleElement" with the actual ID of the element you are waiting for
+            // IWebElement element = wait.Until(SeleniumExtras.ExpectedConditions.ElementIsVisible(By.XPath("//*[@id='side']/div[1]/div/div[2]/div[2]/div/div[1]/p")));
+            //
+            // // Your code to interact with the element after it's loaded
+            // element.Click();
+            
+            WaitForElementToBeVisible(By.XPath("//*[@id='side']/div[1]/div/div[2]/div[2]/div/div[1]/p"), 10);
+            var searchField = FindElementWithTimeout(By.XPath("//*[@id='side']/div[1]/div/div[2]/div[2]/div/div[1]/p"), 10);
             searchField.Click();
+    
             searchField.SendKeys(searchQuery);
-            Thread.Sleep(7000);
-            timeoutInit(7);
-            Console.WriteLine("checkpoint before finding");
-            var firstResult = webDriver.FindElement(By.XPath("//*[@id='pane-side']/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/img"));
-            Thread.Sleep(5000);
-            timeoutInit(5);
+
+            WaitForElementToBeVisible(By.XPath("//*[@id='pane-side']/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/img"), 10);
+            var firstResult = FindElementWithTimeout(By.XPath("//*[@id='pane-side']/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/img"), 10);
+    
             firstResult.Click();
+            
+            // Thread.Sleep(5000);
+            // timeoutInit(5);
+            // var searchField = webDriver.FindElement(By.XPath("//*[@id='side']/div[1]/div/div[2]/div[2]/div/div[1]/p"));
+            // searchField.Click();
+            // searchField.SendKeys(searchQuery);
+            // Thread.Sleep(7000);
+            // timeoutInit(7);
+            // Console.WriteLine("checkpoint before finding");
+            // var firstResult = webDriver.FindElement(By.XPath("//*[@id='pane-side']/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/img"));
+            // Thread.Sleep(5000);
+            // timeoutInit(5);
+            // firstResult.Click();
         }
 
         private void sendMessage(string message)
@@ -117,28 +148,26 @@ namespace MessageSender
 
             timeoutInit( 5);
             webDriver.Navigate().GoToUrl("https://web.whatsapp.com");
-            timeoutInit( 5);
-            webDriver.FindElement(By.XPath("//*[@id='app']/div/div[2]/div[3]/div[1]/div/div/div[3]/div/span")).Click();
             
-            timeoutInit( 5);
+            WaitForElementToBeVisible(By.XPath("//*[@id='app']/div/div[2]/div[3]/div[1]/div/div/div[3]/div/span"),10 );
 
-            
-            var numInput = webDriver.FindElement(By.XPath("//*[@id='app']/div/div[2]/div[3]/div[1]/div/div[3]/div[2]/div/div/div/form/input"));
-            var weiterButton = webDriver.FindElement(By.XPath("//*[@id='app']/div/div[2]/div[3]/div[1]/div/div[3]/div[3]/div/div/div"));        
-            
-            numInput.SendKeys(number);
-            timeoutInit( 5);
-            
+            webDriver.FindElement(By.XPath("//*[@id='app']/div/div[2]/div[3]/div[1]/div/div/div[3]/div/span")).Click();
+
+            //warten bis input für tel Nummer sichtbar ist
+            var input = FindElementWithTimeout(By.XPath("//*[@id='app']/div/div[2]/div[3]/div[1]/div/div[3]/div[1]/div[2]/div/div/div/form/input"), 20);
+            //input für tel Nummer
+            input.Click();
+            input.SendKeys(number);
+            //Weiter Button
+            var weiterButton = FindElementWithTimeout(By.XPath("//*[@id='app']/div/div[2]/div[3]/div[1]/div/div[3]/div[2]/button"), 20);
             weiterButton.Click();
             
-            timeoutInit(5);
-
             Console.WriteLine("Wait for your Phone to send you a message from whatsapp and enter the Code you see on the Display");
             Console.WriteLine($"the code is {getCode(webDriver)}");
             
-            Thread.Sleep(60000);
+            WaitForElementToBeVisible(By.XPath("//*[@id='app']/div/div[2]/div[3]/header/div[2]/div/span/div[1]/div/span"), 100);
             Console.WriteLine("login finished");
-            }
+        }
 
 
         public void start()
