@@ -1,4 +1,5 @@
-﻿using IRobot.UIAutomation.Activities.Browser.JScriptExecutor;
+﻿using System.Text.RegularExpressions;
+using IRobot.UIAutomation.Activities.Browser.JScriptExecutor;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
@@ -60,15 +61,15 @@ namespace MessageSender
 
         private void logout()
         {
-            var menu = webDriver.FindElement(By.XPath("//*[@id='app']/div/div[2]/div[3]/header/div[2]/div/span/div[5]/div/span"));
+            var menu = FindElementWithTimeout(By.XPath("//*[@id='app']/div/div[2]/div[3]/header/div[2]/div/span/div[5]/div/span"), 3);
             menu.Click();
-            timeoutInit(3);
-            var logoutButton = webDriver.FindElement(By.XPath("//*[@id='app']/div/div[2]/div[3]/header/div[2]/div/span/div[5]/div/span"));
+            var logoutButton = FindElementWithTimeout(By.XPath("//*[@id='app']/div/div[2]/div[3]/header/div[2]/div/span/div[5]/span/div/ul/li[7]/div"), 3);
             logoutButton.Click();
             //*[@id="pane-side"]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/img
-            var logoutButtonSubmit = webDriver.FindElement(By.XPath("//*[@id='pane-side']/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/img"));
-            logoutButton.Click();
-
+            var logoutButtonSubmit = FindElementWithTimeout(By.XPath("//*[@id='app']/div/span[2]/div/div/div/div/div/div/div[3]/div/button[2]/div/div"), 3);
+            Thread.Sleep(3000);
+            logoutButtonSubmit.Click();
+            Console.WriteLine("logged out");
         }
 
         private string getCode(ChromeDriver driver)
@@ -89,13 +90,13 @@ namespace MessageSender
         {
             WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(timeoutInSeconds));
             wait.Until(SeleniumExtras.ExpectedConditions.ElementIsVisible(by));
-            Console.WriteLine("element found");
+            // Console.WriteLine("element" + webDriver.FindElement(by).Text +"found");
         }
 
         private IWebElement FindElementWithTimeout(By by, int timeoutInSeconds)
         {
             WaitForElementToBeVisible(by, timeoutInSeconds);
-            Console.WriteLine("element sent");
+            // Console.WriteLine("element" + webDriver.FindElement(by).Text + "set");
             return webDriver.FindElement(by);
         }
 
@@ -115,12 +116,115 @@ namespace MessageSender
             searchField.Click();
     
             searchField.SendKeys(searchQuery);
-
-            WaitForElementToBeVisible(By.XPath("//*[@id='pane-side']/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/img"), 10);
-            var firstResult = FindElementWithTimeout(By.XPath("//*[@id='pane-side']/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/img"), 10);
-    
-            firstResult.Click();
             
+            Thread.Sleep(5000);
+            Console.WriteLine("timeout before clicking is finished");
+
+            string searchResultDivXPath = "//*[@id='pane-side']/div[1]/div/div";
+            IWebElement searchResultDiv = FindElementWithTimeout(By.XPath(searchResultDivXPath), 20);
+            IList<IWebElement> searchResults = searchResultDiv.FindElements(By.XPath("./*"));
+
+            foreach (IWebElement searchResult in searchResults)
+            {
+                // Your actions for each child element
+
+                // Click on the chat element
+                searchResult.Click();
+                Console.WriteLine("Result Clicked");
+
+                // Find and print the name of the chat
+                IWebElement currentChatInfo = FindElementWithTimeout(By.XPath("//*[@id='main']/header/div[1]/div/img"), 10);
+
+                // Click on the chat to open it
+                currentChatInfo.Click();
+                Console.WriteLine("Chat info Clicked");
+                
+                try
+                {
+                    // Try to find the element with the first XPath = private chat
+                    IWebElement telNumber = FindElementWithTimeout(By.XPath("//*[@id='app']/div/div[2]/div[5]/span/div/span/div/div/section/div[1]/div[2]/div/span/span"), 2);
+
+                    // Element with the first XPath exists
+                    Console.WriteLine("In Private Chat");
+
+                    // Perform actions for the first XPath
+                    string currentNumber = telNumber.Text;
+                    Console.WriteLine("Current Number: " + currentNumber);
+                    webDriver.FindElement(By.XPath("//*[@id='app']/div/div[2]/div[5]/span/div/span/div/header/div/div[1]/div/span")).Click();
+                    break;
+
+
+                    // // Extract only digits using regex
+                    // string extractedDigits = new string(currentNumber.Where(char.IsDigit).ToArray());
+                    // Console.WriteLine("Extracted Digits: " + extractedDigits);
+                    //
+                    // if (int.TryParse(extractedDigits, out int phoneNumber))
+                    // {
+                    //     // Successfully parsed as an integer
+                    //     Console.WriteLine("Phone Number as Integer: " + phoneNumber);
+                    //     if (int.TryParse(searchQuery, out int inputPhoneNumber))
+                    //     {
+                    //         // Successfully parsed as an integer
+                    //         Console.WriteLine("Another Number as Integer: " + inputPhoneNumber);
+                    //
+                    //         // Now you can compare phoneNumber and anotherNumber
+                    //         if (phoneNumber == inputPhoneNumber)
+                    //         {
+                    //             Console.WriteLine("Phone Number and Inputed number are equal.");
+                    //             
+                    //             //here I want to get out of the loop
+                    //             
+                    //         }
+                    //         else
+                    //         {
+                    //             Console.WriteLine("Phone Number and Another Number are not equal.");
+                    //             //here I want to close the program
+                    //         }
+                    //     }
+                    //     else
+                    //     {
+                    //         // Could not parse anotherNumberString as an integer
+                    //         Console.WriteLine("Another Number is not a valid integer.");
+                    //         //here I want to close the program
+                    //     }                    
+                    // }
+                    // else
+                    // {
+                    //     // Could not parse as an integer
+                    //     Console.WriteLine("Extracted digits are not a valid integer.");
+                    //     //here I want to close the program
+                    // }                    
+                    // // Perform other actions as needed
+
+                }
+                catch (WebDriverTimeoutException)
+                {
+                    try
+                    {
+                        // Try to find the element with the second XPath = group chat
+                        IWebElement notTelNumber = FindElementWithTimeout(By.XPath("//*[@id='app']/div/div[2]/div[5]/span/div/span/div/div/div/section/div[1]/div/div[3]/span/span"), 2);
+
+                        // Element with the second XPath exists
+                        Console.WriteLine("Group Chat");
+                        webDriver.FindElement(By.XPath("//*[@id='app']/div/div[2]/div[5]/span/div/span/div/div/header/div/div[1]/div/span")).Click();
+
+                    }
+                    catch (WebDriverTimeoutException)
+                    {
+                        // Both elements do not exist
+                        Console.WriteLine("Neither element exists.");
+                        //here I want to close the program
+                    }
+                }
+                
+                // Perform other actions as needed
+            }
+            
+
+            // var firstResult = FindElementWithTimeout(By.XPath("//*[@id='pane-side']/div[1]/div/div/div[5]"), 20);
+            // Console.WriteLine("first result found");
+            // firstResult.Click();
+
             // Thread.Sleep(5000);
             // timeoutInit(5);
             // var searchField = webDriver.FindElement(By.XPath("//*[@id='side']/div[1]/div/div[2]/div[2]/div/div[1]/p"));
@@ -137,7 +241,7 @@ namespace MessageSender
 
         private void sendMessage(string message)
         {
-            var messageInput = webDriver.FindElement(By.XPath("//*[@id='main']/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p"));
+            var messageInput =FindElementWithTimeout(By.XPath("//*[@id='main']/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p"), 20);
             messageInput.SendKeys(message);
             messageInput.SendKeys(Keys.Enter);
         }
