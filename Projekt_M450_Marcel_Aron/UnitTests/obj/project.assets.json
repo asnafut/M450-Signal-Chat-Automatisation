@@ -1788,6 +1788,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "MessageSender/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/MessageSender.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MessageSender.dll": {}
+        }
       }
     }
   },
@@ -6325,41 +6335,59 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "MessageSender/1.0.0": {
+      "type": "project",
+      "path": "../MessageSender/MessageSender.csproj",
+      "msbuildProject": "../MessageSender/MessageSender.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "MSTest.TestAdapter >= 2.2.8",
       "MSTest.TestFramework >= 2.2.8",
+      "MessageSender >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AronS\\.nuget\\packages\\": {}
+    "C:\\Users\\horst\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
-      "packagesPath": "C:\\Users\\AronS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\obj\\",
+      "projectPath": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
+      "packagesPath": "C:\\Users\\horst\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\AronS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\horst\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj": {
+              "projectPath": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6405,8 +6433,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project MessageSender is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project MessageSender supports: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "MessageSender",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

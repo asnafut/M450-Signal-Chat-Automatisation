@@ -1,31 +1,124 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj": {}
+    "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj": {
+    "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
-        "projectName": "UnitTests",
-        "projectPath": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
-        "packagesPath": "C:\\Users\\AronS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\obj\\",
+        "projectUniqueName": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
+        "projectName": "MessageSender",
+        "projectPath": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
+        "packagesPath": "C:\\Users\\horst\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AronS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\horst\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "IRobot.UIAutomation.Activities": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.16.2, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.16.2, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[120.0.6099.10900, )"
+            },
+            "WebDriverManager": {
+              "target": "Package",
+              "version": "[2.17.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
+        "projectName": "UnitTests",
+        "projectPath": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\UnitTests.csproj",
+        "packagesPath": "C:\\Users\\horst\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\horst\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj": {
+                "projectPath": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -71,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -5,15 +5,16 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\AronS\.nuget\packages\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\horst\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.8.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\AronS\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\horst\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgInterop_UIAutomationClient_Signed Condition=" '$(PkgInterop_UIAutomationClient_Signed)' == '' ">C:\Users\AronS\.nuget\packages\interop.uiautomationclient.signed\10.18362.0</PkgInterop_UIAutomationClient_Signed>
-    <PkgExtended_Wpf_Toolkit Condition=" '$(PkgExtended_Wpf_Toolkit)' == '' ">C:\Users\AronS\.nuget\packages\extended.wpf.toolkit\3.7.0</PkgExtended_Wpf_Toolkit>
+    <PkgInterop_UIAutomationClient_Signed Condition=" '$(PkgInterop_UIAutomationClient_Signed)' == '' ">C:\Users\horst\.nuget\packages\interop.uiautomationclient.signed\10.18362.0</PkgInterop_UIAutomationClient_Signed>
+    <PkgExtended_Wpf_Toolkit Condition=" '$(PkgExtended_Wpf_Toolkit)' == '' ">C:\Users\horst\.nuget\packages\extended.wpf.toolkit\3.7.0</PkgExtended_Wpf_Toolkit>
   </PropertyGroup>
 </Project>

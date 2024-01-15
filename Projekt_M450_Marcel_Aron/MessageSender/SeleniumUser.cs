@@ -11,12 +11,17 @@ namespace MessageSender
 {
     public class SeleniumUser
     {
-        private string FromTel;
-        private string ToTel;
-        private string Message;
+        private string FromTel = "defaultTel";
+        private string ToTel = "defaultTel";
+        private string Message = "defaultTel";
         private ChromeDriver webDriver;
 
-        public void setFromTel(string Tel)
+        public SeleniumUser()
+        {
+            InitializeWebDriver();
+        }
+
+        public void setFromTel(string Tel = "defaultTel")
         {
             this.FromTel = Tel;
         }

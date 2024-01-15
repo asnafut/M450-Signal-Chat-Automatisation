@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj": {}
+    "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj": {
+    "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
+        "projectUniqueName": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
         "projectName": "MessageSender",
-        "projectPath": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
-        "packagesPath": "C:\\Users\\AronS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\obj\\",
+        "projectPath": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\MessageSender.csproj",
+        "packagesPath": "C:\\Users\\horst\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\horst\\OneDrive\\Desktop\\M450-WhatsApp-Chat-Automatisation\\Projekt_M450_Marcel_Aron\\MessageSender\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AronS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\horst\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
