@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\New_Version\\MessageSender\\MessageSender.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\New_Version\\MessageSender\\MessageSender.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\New_Version\\MessageSender\\MessageSender.csproj",
+        "projectName": "MessageSender",
+        "projectPath": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\New_Version\\MessageSender\\MessageSender.csproj",
+        "packagesPath": "C:\\Users\\AronS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AronS\\source\\repos\\M450-WhatsApp-Chat-Automatisation\\New_Version\\MessageSender\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\AronS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "IRobot.UIAutomation.Activities": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.16.2, )"
+            },
+            "WebDriverManager": {
+              "target": "Package",
+              "version": "[2.17.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
