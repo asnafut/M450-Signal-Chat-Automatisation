@@ -44,9 +44,9 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
-            "Selenium.Support": {
+            "Moq": {
               "target": "Package",
-              "version": "[4.16.2, )"
+              "version": "[4.20.70, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",

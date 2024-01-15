@@ -12,6 +12,7 @@ C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\MessageSender.pdb
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\AngleSharp.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\AipSdk.dll
+C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\Castle.Core.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
@@ -23,6 +24,7 @@ C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\Interop.UIAutomationClient.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\IRobot.UIAutomation.Activities.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\Microsoft.VisualStudio.OLE.Interop.dll
+C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\Moq.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\WebDriver.Support.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\WebDriver.dll
@@ -44,6 +46,7 @@ C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.0\System.Management.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\GIBZ\Berufsschule\M450\Projekt\Code\M450-WhatsApp-Chat-Automatisation\Projekt_M450_Marcel_Aron\MessageSender\obj\Debug\net6.0-windows\MessageSender.csproj.AssemblyReference.cache
